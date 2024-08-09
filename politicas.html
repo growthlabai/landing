@@ -1,0 +1,880 @@
+<html><head><script>window.sessionId = 'rck.' + Math.random().toString(36).substr(2, 9) + '.' + Date.now();</script><style type="text/css">
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+body{
+    margin:0;
+    padding:0
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.col-1 {
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.col-2 {
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.col-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-5 {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-11 {
+  -ms-flex: 0 0 91.666667%;
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .col-sm {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .col-sm-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  .col-sm-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .col-sm-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-sm-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-sm-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-sm-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-sm-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-sm-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-sm-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .col-sm-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .order-sm-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  .order-sm-last {
+    -ms-flex-order: 13;
+    order: 13;
+  }
+  .order-sm-0 {
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .order-sm-1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .order-sm-2 {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .order-sm-3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .order-sm-4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .order-sm-5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  .order-sm-6 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  .order-sm-7 {
+    -ms-flex-order: 7;
+    order: 7;
+  }
+  .order-sm-8 {
+    -ms-flex-order: 8;
+    order: 8;
+  }
+  .order-sm-9 {
+    -ms-flex-order: 9;
+    order: 9;
+  }
+  .order-sm-10 {
+    -ms-flex-order: 10;
+    order: 10;
+  }
+  .order-sm-11 {
+    -ms-flex-order: 11;
+    order: 11;
+  }
+  .order-sm-12 {
+    -ms-flex-order: 12;
+    order: 12;
+  }
+  .offset-sm-0 {
+    margin-left: 0;
+  }
+  .offset-sm-1 {
+    margin-left: 8.333333%;
+  }
+  .offset-sm-2 {
+    margin-left: 16.666667%;
+  }
+  .offset-sm-3 {
+    margin-left: 25%;
+  }
+  .offset-sm-4 {
+    margin-left: 33.333333%;
+  }
+  .offset-sm-5 {
+    margin-left: 41.666667%;
+  }
+  .offset-sm-6 {
+    margin-left: 50%;
+  }
+  .offset-sm-7 {
+    margin-left: 58.333333%;
+  }
+  .offset-sm-8 {
+    margin-left: 66.666667%;
+  }
+  .offset-sm-9 {
+    margin-left: 75%;
+  }
+  .offset-sm-10 {
+    margin-left: 83.333333%;
+  }
+  .offset-sm-11 {
+    margin-left: 91.666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .col-md-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  .col-md-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .col-md-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-md-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-md-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-md-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .col-md-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .form-control {
+    transition: none;
+  }
+}
+
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+background-color: transparent;border: 1px solid transparent;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+ outline:0;
+}
+.btn-light{
+  color:#212529;
+  background-color:#f8f9fa;
+  border-color:#f8f9fa
+}
+.btn-light:hover{
+  color:#212529;
+  background-color:#e2e6ea;
+  border-color:#dae0e5
+}
+.btn-light.focus,
+.btn-light:focus{
+  box-shadow:0 0 0 .2rem rgba(216,217,219,.5)
+}
+.btn-light.disabled,.btn-light:disabled{
+  color:#212529;
+  background-color:#f8f9fa;
+  border-color:#f8f9fa
+}
+
+.embed-responsive{
+  position:relative;
+  display:block;
+  width:100%;
+  padding:0;
+  overflow:hidden
+}
+.embed-responsive::before{
+  display:block;
+  content:""
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border:0
+}
+.embed-responsive-21by9::before{
+  padding-top:42.857143%
+}
+.embed-responsive-16by9::before{
+  padding-top:56.25%
+}
+.embed-responsive-3by4::before{
+  padding-top:133.333333%
+}
+.embed-responsive-1by1::before{
+  padding-top:100%
+}
+.img-fluid{max-width:100%;height:auto}
+.form-text{display:block;margin-top:.25rem}
+.text-muted{color:#6c757d!important}
+.was-validated .form-control:valid{
+  border-color:#28a745;
+  padding-right:2.25rem;
+  background-repeat:no-repeat;
+  background-position:center right calc(2.25rem / 4);
+  background-size:calc(2.25rem / 2) calc(2.25rem / 2);
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e")
+}
+.form-control.is-valid:focus,.was-validated .form-control:valid:focus{
+  border-color:#28a745;
+  box-shadow:0 0 0 .2rem rgba(40,167,69,.25)}
+  .form-control.is-valid~.valid-feedback,
+  .form-control.is-valid~.valid-tooltip,
+  .was-validated .form-control:valid~.valid-feedback,
+  .was-validated .form-control:valid~.valid-tooltip{
+    display:block
+  }
+  .was-validated textarea.form-control:valid,textarea.form-control.is-valid{
+    padding-right:2.25rem;
+    background-position:top calc(2.25rem / 4) right calc(2.25rem / 4)
+  }
+  .form-control.is-invalid,.was-validated .form-control:invalid{
+    border-color:#dc3545;
+    padding-right:2.25rem;
+    background-repeat:no-repeat;
+    background-position:center right calc(2.25rem / 4);
+    background-size:calc(2.25rem / 2) calc(2.25rem / 2);
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E")
+  }
+  .form-control.is-invalid:focus,.was-validated .form-control:invalid:focus{
+      border-color:#dc3545;
+      box-shadow:0 0 0 .2rem rgba(220,53,69,.25)
+  }
+  .form-control.is-invalid~.invalid-feedback,.form-control.is-invalid~.invalid-tooltip,.was-validated .form-control:invalid~.invalid-feedback,.was-validated .form-control:invalid~.invalid-tooltip{
+    display:block
+  }
+  .was-validated textarea.form-control:invalid,textarea.form-control.is-invalid{
+    padding-right:2.25rem;
+    background-position:top calc(2.25rem / 4) right calc(2.25rem / 4)
+  }
+.form-check {
+  position:relative;
+  display:block;
+  padding-left:1.25rem
+}
+.form-check-input {
+  position:absolute;
+  margin-top:.1rem;
+  margin-left:-1.25rem
+}
+.form-check-input:disabled~.form-check-label {
+  color:#6c757d
+}
+.form-check-label {
+  margin-bottom:0
+}
+.form-check-inline {
+  display:-webkit-inline-box;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+  padding-left:0;
+  margin-right:.75rem
+}
+.form-check-inline .form-check-input {
+  position:static;
+  margin-top:0;
+  margin-right:.3125rem;
+  margin-left:0
+}
+.form-check-input.is-valid~.valid-feedback,.form-check-input.is-valid~.valid-tooltip,.was-validated .form-check-input:valid~.valid-feedback,.was-validated .form-check-input:valid~.valid-tooltip {
+  display:block
+}
+.form-check-input.is-invalid~.form-check-label,.was-validated .form-check-input:invalid~.form-check-label {
+  color:#dc3545
+}
+.form-check-input.is-invalid~.invalid-feedback,.form-check-input.is-invalid~.invalid-tooltip,.was-validated .form-check-input:invalid~.invalid-feedback,.was-validated .form-check-input:invalid~.invalid-tooltip {
+  display:block
+}
+.form-check {
+  width:100%
+}
+</style><style data-styled="eKdfWt cFaOoW dYszVG jeGkyP gSNeWP izyxyY jhnsYQ" data-styled-version="4.1.3">
+/* sc-component-id: sc-global-2541213546 */
+body{font-family:auto;}
+/* sc-component-id: sc-global-836452597 */
+#react-app{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;} html{-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;scroll-behavior:smooth;} body{margin:0px;} form{margin-bottom:0;} b,strong{font-weight:bold;} p{margin:0;} .embed-responsive .embed-responsive-item,.embed-responsive embed,.embed-responsive iframe,.embed-responsive object,.embed-responsive video{top:2px;} .fb-comments{width:100% !important;height:100% !important;} .fb-comments iframe{border:0;display:block;margin:0 auto;width:100% !important;height:100% !important;} .hidden{display:none;}
+/* sc-component-id: sc-kgoBCf */
+.izyxyY{font-size:26px;font-weight:600;color:#212529;text-align:center;-webkit-text-decoration:none;text-decoration:none;line-height:1.1;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.izyxyY{line-height:1.1;cursor:auto;width:100%;}} @media (max-width:479px){.izyxyY{line-height:1.1;cursor:auto;width:100%;}}.jhnsYQ{font-size:14px;color:#212529;text-align:center;-webkit-text-decoration:none;text-decoration:none;line-height:1.5;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.jhnsYQ{line-height:1.5;cursor:auto;width:100%;}} @media (max-width:479px){.jhnsYQ{line-height:1.5;cursor:auto;width:100%;}}
+/* sc-component-id: sc-jqCOkK */
+.gSNeWP{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-Index:1;}
+/* sc-component-id: sc-dqBHgY */
+.jeGkyP{padding:5px;margin:0;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){}
+/* sc-component-id: sc-gxMtzJ */
+.dYszVG{padding:5px;margin:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.dYszVG{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.dYszVG{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}
+/* sc-component-id: sc-dfVpRl */
+.cFaOoW{padding:5px;display:initial;} @media (max-width:820px) and (min-width:600px){.cFaOoW{display:initial;}} @media (max-width:479px){.cFaOoW{display:initial;}}
+/* sc-component-id: sc-gwVKww */
+.eKdfWt{position:absolute;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;right:24px;bottom:24px;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-flex-flow:column-reverse;-ms-flex-flow:column-reverse;flex-flow:column-reverse;z-index:1000;}</style><meta data-rh="" charset="UTF-8"><meta data-rh="" httpequiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta data-rh="" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta data-rh="" name="description"><meta data-rh="" name="keywords"><meta data-rh="" property="og:locale" content="en_US"><meta data-rh="" property="og:type" content="article"><meta data-rh="" property="og:title" content=""><meta data-rh="" property="og:description" content=""><meta data-rh="" property="og:site_name" content=""><meta data-rh="" property="og:url" content=""><title data-rh=""></title><script data-rh="">
+								function checkStateAndCall(callback) {
+									var _success = false;
+									return function () {
+											if (!_success && (!this.readyState || this.readyState === 'complete')) {
+												_success = true;
+												callback();
+											}
+									}
+								}
+
+								function getMain(results) {
+									function loadNext() {
+										if (!results.length) {
+											return;
+										}
+
+										var path = results.shift();
+										var scriptElm = document.createElement('script');
+										scriptElm.type = 'text/javascript';
+										scriptElm.async = true;
+										scriptElm.src = path;
+										scriptElm.onload = scriptElm.onreadystatechange = checkStateAndCall(loadNext);
+
+										// this one will be ready
+										var headElm = document.head || document.getElementsByTagName('head')[0];
+										headElm.appendChild(scriptElm);
+									}
+									loadNext(); // start a chain
+								}
+
+								function getFont(font) {
+									function loadNext() {
+										var linkElm = document.createElement('link');
+										linkElm.type = 'text/css';
+										linkElm.rel = "stylesheet";
+										linkElm.href = font;
+
+										// this one will be ready
+										var headElm = document.head || document.getElementsByTagName('head')[0];
+										headElm.insertBefore(linkElm, headElm.firstChild);
+									}
+									loadNext();
+								}
+							</script><script data-rh="" id="result" type="javascript/worker">
+								self.onmessage = function (e) {
+									const loadLinkFont = async (initial) => {
+									const fonts = ['latin', 'latin-ext']
+									const variants = ['300', 'regular', 'regular', '700', '900']
+									return await getUrl(initial, fonts, variants)
+								}
+
+								const getUrl = (font, results, variants) => {
+									const variantsEnc = variants.join(",")
+									const familiesEnc = encodeURIComponent(font) +':'+ variantsEnc
+									let query = '?family='+ familiesEnc
+
+									// Query the fonts in the specified
+									query += '&subset='+ results.join(",") +'&display=swap'
+
+									// Fetch and return stylesheet
+									const FONT_BASE_URL = "https://fonts.googleapis.com/css"
+									return FONT_BASE_URL + query
+									}
+
+									var links = []
+									var fonts = [];
+									fonts.map((font) => {
+										if (!links.includes(font)) {
+												loadLinkFont(font)
+												.then((result) => {
+													self.postMessage({ type: 'getFont', link: result });
+												})
+												links.push(font)
+											}
+										})
+
+										setTimeout(function () {
+											const secondMessage = { type: 'getMain' }
+											self.postMessage(secondMessage);
+										}, 2500);
+								};
+							</script></head><body><div id="react-app"><div class="sc-gwVKww eKdfWt"></div><div id="0eedc07b-fa31-4f17-ac4e-fa412865dbb8" class="sc-bZQynM sc-kgoBCf container-fluid  sc-dfVpRl cFaOoW"><div class="sc-bZQynM sc-kgoBCf row  sc-gxMtzJ dYszVG"><div class="sc-bZQynM sc-kgoBCf col-md-12  sc-dqBHgY jeGkyP"><div class="sc-jqCOkK gSNeWP"><div class="sc-bZQynM sc-kgoBCf izyxyY"><div>Políticas Growthchat</div></div></div></div></div></div><div id="c440e3a5-3c8a-4923-a5b0-0e01457ab82e" class="sc-bZQynM sc-kgoBCf container-fluid  sc-dfVpRl cFaOoW"><div class="sc-bZQynM sc-kgoBCf row  sc-gxMtzJ dYszVG"><div class="sc-bZQynM sc-kgoBCf col-md-12  sc-dqBHgY jeGkyP"><div class="sc-jqCOkK gSNeWP"><div class="sc-bZQynM sc-kgoBCf jhnsYQ"><b>Política de Privacidade do serviço Growthchat&nbsp;</b><div>Para receber informações sobre os seus dados pessoais, os propósitos e as partes de informação que são compartilhadas, entre em contato com o Proprietário.</div><div><br></div><div><b>Proprietário e Controlador de Dados&nbsp;</b></div><div>Growthchat LTDA - Avenida Paulista, 1106, Sala 01, Andar 16, Bela Vista, São Paulo, São Paulo&nbsp;</div><div>&nbsp;E-mail de contato do Proprietário: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ee8f7eaf1ecdef9ecf1e9eaf6f2fffcb0fdf1f3b0fcec">[email&nbsp;protected]</a><br></div><div><br></div><div><b>Tipos de Dados coletados</b></div><div>&nbsp;</div><div>Uso de Dados e outros dados coletados&nbsp;</div><div>&nbsp;Detalhes completos sobre cada tipo de Dados Pessoais coletados são fornecidos nas seções dedicadas desta política de privacidade ou por textos explicativos específicos exibidos antes da coleta de Dados.
+Os Dados Pessoais poderão ser fornecidos livremente pelo Usuário, ou, no caso dos Dados de Utilização, coletados automaticamente ao se utilizar este Aplicativo.
+A menos que especificado diferentemente todos os Dados solicitados por este Aplicativo são obrigatórios e a falta de fornecimento destes Dados poderá impossibilitar este Aplicativo de fornecer os seus Serviços. Nos casos em que este Aplicativo afirmar especificamente que alguns Dados não forem obrigatórios, os Usuários ficam livres para deixarem de comunicar estes Dados sem nenhuma consequência para a disponibilidade ou o funcionamento do Serviço.
+Os Usuários que tiverem dúvidas a respeito de quais Dados Pessoais são obrigatórios estão convidados a entrar em contato com o Proprietário.
+Quaisquer usos de cookies – ou de outras ferramentas de rastreamento – por este Aplicativo ou pelos proprietários de serviços terceiros utilizados por este Aplicativo serão para a finalidade de fornecer os Serviços solicitados pelo Usuário, além das demais finalidades descritas no presente documentoe na Política de Cookies.
+
+Os Usuários ficam responsáveis por quaisquer Dados Pessoais de terceiros que forem obtidos, publicados ou compartilhados através deste Serviço (este Aplicativo).<br></div><div><br></div><div><b>Modo e local de processamento dos Dados</b>&nbsp;</div><div><br></div><div>Método de processamento</div><div>&nbsp;Proprietário tomará as medidas de segurança adequadas para impedir o acesso não autorizado, divulgação, alteração ou destruição não autorizada dos Dados.
+O processamento dos Dados é realizado utilizando computadores e /ou ferramentas de TI habilitadas, seguindo procedimentos organizacionais e meios estritamente relacionados com os fins indicados. Além do Proprietário, em alguns casos, os Dados podem ser acessados por certos tipos de pessoas encarregadas, envolvidas com a operação deste Serviço (este Aplicativo) (administração, vendas, marketing, administração legal do sistema) ou pessoas externas (como fornecedores terceirizados de serviços técnicos, carteiros, provedores de hospedagem, empresas de TI, agências de comunicação) nomeadas, quando necessário, como Processadores de Dados por parte do Proprietário. A lista atualizada destas partes pode ser solicitada ao Proprietário a qualquer momento.
+
+Lugar
+Os dados são processados ​​nas sedes de operação dos Proprietários, e em quaisquer outros lugares onde as partes envolvidas com o processamento estiverem localizadas.
+Dependendo da localização do Usuário as transferências de dados poderão envolver a transferência dos Dados do Usuário para outro país que não seja o seu. Para descobrirem mais sobre o local de processamento de tais Dados transferidos os Usuários poderão verificar a seção contendo os detalhes sobre o processamento de Dados Pessoais.
+
+Período de conservação
+Salvo especificação em contrário neste documento, os Dados Pessoais serão tratados e armazenados pelo tempo necessário para as finalidades para as quais foram coletados, e poderão ser retidos por mais tempo em razão de qualquer obrigação legal aplicável ou com base no consentimento dos Usuários.<br></div><div><br></div><div><b>&nbsp;Informações adicionais para usuários</b></div><div><b><br></b></div><div>&nbsp;Base jurídica para o processamento
+O Proprietário poderá processar os Dados Pessoais relacionados ao Usuário se uma das hipóteses a seguir se aplicar:
+
+os Usuários tenham dado a sua anuência para uma ou mais finalidades específicas.
+o fornecimento dos Dados for necessário para o cumprimento de um contrato com o Usuário e/ou quaisquer obrigações pré-contratuais do mesmo;
+o processamento for necessário para o cumprimento de uma obrigação jurídica à qual o Proprietário estiver sujeito;
+o processamento estiver relacionado a uma tarefa que for executada no interesse público ou no exercício de uma autorização oficial na qual o Proprietário estiver investido;
+o processamento for necessário para a finalidade de interesses legítimos perseguidos pelo Proprietário ou por um terceiro;
+Em qualquer caso, o Proprietário colaborará de bom grado para esclarecer qual a base jurídica que se aplica ao processamento, e em especial se o fornecimento de Dados for um requisito obrigatório por força de lei ou contratual, ou uma exigência necessária para celebrar um contrato.
+
+Mais informações sobre o tempo de retenção
+Salvo especificação em contrário neste documento, os Dados Pessoais serão tratados e armazenados pelo tempo necessário para as finalidades para as quais foram coletados, e poderão ser retidos por mais tempo em razão de qualquer obrigação legal aplicável ou com base no consentimento dos Usuários.
+
+Portanto:
+
+Os Dados Pessoais coletados para as finalidades relacionadas com a execução de um contrato entre o Proprietário e o Usuário serão conservados até que tal contrato tenha sido completamente cumprido.
+Os Dados Pessoais coletados para as finalidades relacionadas com os legítimos interesses do Proprietário serão conservados pelo tempo que for necessário para cumprir tais finalidades. Os Usuários poderão obter informações específicas sobre os interesses legítimos perseguidos pelo Proprietário dentro das seções pertinentes deste documento ou entrando em contato com o Proprietário.
+O Proprietário poderá ter a permissão de conservar os Dados Pessoais por um prazo maior sempre que o Usuário tiver dado a sua autorização para tal processamento, enquanto tal autorização não tiver sido retirada. Além disso, o Proprietário poderá ficar obrigado a conservar os Dados Pessoais por um prazo maior sempre que necessário para o cumprimento de uma obrigação jurídica ou de um mandado de uma autoridade.
+
+Assim que o prazo de conservação vencer os Dados Pessoais serão apagados. Desta forma o direito de acessar, o direito de apagar, o direito de corrigir e o direito à portabilidade dos dados não poderão ter o seu cumprimento exigido após o vencimento do prazo de conservação.
+
+Os direitos dos Usuários com base no Regulamento Geral de Proteção de Dados (GDPR)
+Os Usuários poderão exercer determinados direitos a respeito dos seus Dados processados pelo Proprietário.
+
+Em especial, os Usuários possuem os direitos a fazer o seguinte, dentro dos limites permitidos por lei:
+
+Retirar a sua anuência a qualquer momento. Os Usuários possuem o direito de retirar a sua anuência nos casos em que tenham dado a sua anuência anteriormente para o processamento dos seus Dados Pessoais.
+Objetar o processamento dos seus Dados. Os Usuários possuem o direito de objetar o processamento dos seus Dados se o processamento for executado sobre outra base jurídica que não a anuência.
+Acessar os seus Dados. Os Usuários possuem o direito de saber se os seus Dados estão sendo tratados pelo Proprietário, obter revelações sobre determinados aspectos do tratamento e conseguir uma cópia dos Dados que estiverem sendo tratados.
+Verificar e pedir retificação. Os Usuários possuem o direito de verificar a exatidão dos seus Dados e de pedir que os mesmos sejam atualizados ou corrigidos.
+Restringir o processamento dos seus Dados. Os Usuários possuem o direito de restringir o processamento dos seus Dados para qualquer outra finalidade que não seja o armazenamento dos mesmos.
+Ter os seus Dados Pessoais apagados ou retirados de outra maneira. Os Usuários possuem o direito de obter a eliminação dos seus Dados do Proprietário.
+Receber os seus Dados e ter os mesmos transferidos para outro controlador. Os Usuários possuem o direito de receber os seus Dados em um formato estruturado, utilizado comumente e apto a ser lido por máquinas e, se for viável tecnicamente, fazer com que estes sejam transmitidos para outro controlador sem nenhum empecilho.
+Registrar uma reclamação. Os Usuários possuem o direito de apresentar reclamação perante a sua autoridade de proteção de dados competente.
+Os Usuários também possuem o direito de serem informados sobre a base jurídica das transferências de Dados para o exterior, incluindo quaisquer organizações internacionais regidas pelo direito internacional público ou formadas por dois ou mais países, como a ONU, e sobre as medidas de segurança tomadas pelo Proprietário para proteger seus Dados.
+
+Detalhes sobre o direito de objetar ao processamento
+Nos casos em que os Dados Pessoais forem processados por um interesse público, no exercício de uma autorização oficial na qual o Proprietário estiver investido ou para finalidades dos interesses legítimos perseguidos pelo Proprietário, os Usuários poderão objetar tal processamento através do fornecimento de um motivo relacionado com a sua situação em especial para justificar a objeção.
+
+Os Usuários devem saber, entretanto, que caso os seus Dados Pessoais sejam processados para finalidades de marketing direto, eles podem objetar tal processamento a qualquer momento de forma gratuita e sem fornecer qualquer justificativa. Quando o Usuário se opuser ao processamento para fins de marketing direto, os Dados Pessoais não serão mais processados para esses fins. Para saber se o Proprietário está processando Dados Pessoais para fins de marketing direto, os Usuários podem consultar as seções respectivas deste documento.
+
+Como exercer estes direitos
+Quaisquer pedidos para exercer os direitos dos Usuários podem ser direcionados ao Proprietário através dos dados de contato fornecidos neste documento. Tais pedidos são gratuitos e serão atendidos pelo Proprietário com a maior brevidade possível e sempre no prazo de um mês, fornecendo aos Usuários as informações exigidas por lei. Qualquer retificação ou exclusão de Dados Pessoais ou restrição de processamento será comunicada pelo Proprietário a cada destinatário, se houver, a quem os Dados Pessoais foram divulgados, a menos que isso seja impossível ou implique um trabalho desproporcional. A pedido dos Usuários, o Proprietário os informará sobre tais destinatários.<br></div></div></div></div></div></div></div><script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" async="">window.initialReduxState = {"source":{"board":[{"$$typeof":"react.element","type":"div","key":"0eedc07b-fa31-4f17-ac4e-fa412865dbb8","ref":null,"props":{"rck_id":"0eedc07b-fa31-4f17-ac4e-fa412865dbb8","className":"container-fluid","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"acc2476d-ed75-442d-9976-2aebcd9f6509","ref":null,"props":{"rck_id":"acc2476d-ed75-442d-9976-2aebcd9f6509","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"23cb1040-d0bf-4ed6-9da2-5591fdbbb89c","ref":null,"props":{"rck_id":"23cb1040-d0bf-4ed6-9da2-5591fdbbb89c","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"a813a01c-4562-4a88-97ae-786584ff25b4","ref":null,"props":{"rck_id":"a813a01c-4562-4a88-97ae-786584ff25b4","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cdiv\u003EPolíticas Growthchat\u003C\u002Fdiv\u003E","style":{"fontSize":26,"fontWeight":600,"color":"#212529"}},"_owner":null}]},"_owner":null}]},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"c440e3a5-3c8a-4923-a5b0-0e01457ab82e","ref":null,"props":{"rck_id":"c440e3a5-3c8a-4923-a5b0-0e01457ab82e","className":"container-fluid","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"c13e9481-636a-4d1f-acdd-fb3a14bfc82a","ref":null,"props":{"rck_id":"c13e9481-636a-4d1f-acdd-fb3a14bfc82a","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"85858e22-7480-441d-9a2f-0cec050fbb9a","ref":null,"props":{"rck_id":"85858e22-7480-441d-9a2f-0cec050fbb9a","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"84c95b16-bc01-4a00-ac49-b95b56dbf278","ref":null,"props":{"className":"lead","rck_id":"84c95b16-bc01-4a00-ac49-b95b56dbf278","rck_type":"element","rck_element":"paragraph","tag":"div","text":"\u003Cb\u003EPolítica de Privacidade do serviço Growthchat&nbsp;\u003C\u002Fb\u003E\u003Cdiv\u003EPara receber informações sobre os seus dados pessoais, os propósitos e as partes de informação que são compartilhadas, entre em contato com o Proprietário.\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003EProprietário e Controlador de Dados&nbsp;\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003EGrowthchat LTDA - Avenida Paulista, 1106, Sala 01, Andar 16, Bela Vista, São Paulo, São Paulo&nbsp;\u003C\u002Fdiv\u003E\u003Cdiv\u003E&nbsp;E-mail de contato do Proprietário: vitor@growthlab.com.br\u003Cbr\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003ETipos de Dados coletados\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E&nbsp;\u003C\u002Fdiv\u003E\u003Cdiv\u003EUso de Dados e outros dados coletados&nbsp;\u003C\u002Fdiv\u003E\u003Cdiv\u003E&nbsp;Detalhes completos sobre cada tipo de Dados Pessoais coletados são fornecidos nas seções dedicadas desta política de privacidade ou por textos explicativos específicos exibidos antes da coleta de Dados.\nOs Dados Pessoais poderão ser fornecidos livremente pelo Usuário, ou, no caso dos Dados de Utilização, coletados automaticamente ao se utilizar este Aplicativo.\nA menos que especificado diferentemente todos os Dados solicitados por este Aplicativo são obrigatórios e a falta de fornecimento destes Dados poderá impossibilitar este Aplicativo de fornecer os seus Serviços. Nos casos em que este Aplicativo afirmar especificamente que alguns Dados não forem obrigatórios, os Usuários ficam livres para deixarem de comunicar estes Dados sem nenhuma consequência para a disponibilidade ou o funcionamento do Serviço.\nOs Usuários que tiverem dúvidas a respeito de quais Dados Pessoais são obrigatórios estão convidados a entrar em contato com o Proprietário.\nQuaisquer usos de cookies – ou de outras ferramentas de rastreamento – por este Aplicativo ou pelos proprietários de serviços terceiros utilizados por este Aplicativo serão para a finalidade de fornecer os Serviços solicitados pelo Usuário, além das demais finalidades descritas no presente documentoe na Política de Cookies.\n\nOs Usuários ficam responsáveis por quaisquer Dados Pessoais de terceiros que forem obtidos, publicados ou compartilhados através deste Serviço (este Aplicativo).\u003Cbr\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003EModo e local de processamento dos Dados\u003C\u002Fb\u003E&nbsp;\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003EMétodo de processamento\u003C\u002Fdiv\u003E\u003Cdiv\u003E&nbsp;Proprietário tomará as medidas de segurança adequadas para impedir o acesso não autorizado, divulgação, alteração ou destruição não autorizada dos Dados.\nO processamento dos Dados é realizado utilizando computadores e \u002Fou ferramentas de TI habilitadas, seguindo procedimentos organizacionais e meios estritamente relacionados com os fins indicados. Além do Proprietário, em alguns casos, os Dados podem ser acessados por certos tipos de pessoas encarregadas, envolvidas com a operação deste Serviço (este Aplicativo) (administração, vendas, marketing, administração legal do sistema) ou pessoas externas (como fornecedores terceirizados de serviços técnicos, carteiros, provedores de hospedagem, empresas de TI, agências de comunicação) nomeadas, quando necessário, como Processadores de Dados por parte do Proprietário. A lista atualizada destas partes pode ser solicitada ao Proprietário a qualquer momento.\n\nLugar\nOs dados são processados ​​nas sedes de operação dos Proprietários, e em quaisquer outros lugares onde as partes envolvidas com o processamento estiverem localizadas.\nDependendo da localização do Usuário as transferências de dados poderão envolver a transferência dos Dados do Usuário para outro país que não seja o seu. Para descobrirem mais sobre o local de processamento de tais Dados transferidos os Usuários poderão verificar a seção contendo os detalhes sobre o processamento de Dados Pessoais.\n\nPeríodo de conservação\nSalvo especificação em contrário neste documento, os Dados Pessoais serão tratados e armazenados pelo tempo necessário para as finalidades para as quais foram coletados, e poderão ser retidos por mais tempo em razão de qualquer obrigação legal aplicável ou com base no consentimento dos Usuários.\u003Cbr\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E&nbsp;Informações adicionais para usuários\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E\u003Cbr\u003E\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E&nbsp;Base jurídica para o processamento\nO Proprietário poderá processar os Dados Pessoais relacionados ao Usuário se uma das hipóteses a seguir se aplicar:\n\nos Usuários tenham dado a sua anuência para uma ou mais finalidades específicas.\no fornecimento dos Dados for necessário para o cumprimento de um contrato com o Usuário e\u002Fou quaisquer obrigações pré-contratuais do mesmo;\no processamento for necessário para o cumprimento de uma obrigação jurídica à qual o Proprietário estiver sujeito;\no processamento estiver relacionado a uma tarefa que for executada no interesse público ou no exercício de uma autorização oficial na qual o Proprietário estiver investido;\no processamento for necessário para a finalidade de interesses legítimos perseguidos pelo Proprietário ou por um terceiro;\nEm qualquer caso, o Proprietário colaborará de bom grado para esclarecer qual a base jurídica que se aplica ao processamento, e em especial se o fornecimento de Dados for um requisito obrigatório por força de lei ou contratual, ou uma exigência necessária para celebrar um contrato.\n\nMais informações sobre o tempo de retenção\nSalvo especificação em contrário neste documento, os Dados Pessoais serão tratados e armazenados pelo tempo necessário para as finalidades para as quais foram coletados, e poderão ser retidos por mais tempo em razão de qualquer obrigação legal aplicável ou com base no consentimento dos Usuários.\n\nPortanto:\n\nOs Dados Pessoais coletados para as finalidades relacionadas com a execução de um contrato entre o Proprietário e o Usuário serão conservados até que tal contrato tenha sido completamente cumprido.\nOs Dados Pessoais coletados para as finalidades relacionadas com os legítimos interesses do Proprietário serão conservados pelo tempo que for necessário para cumprir tais finalidades. Os Usuários poderão obter informações específicas sobre os interesses legítimos perseguidos pelo Proprietário dentro das seções pertinentes deste documento ou entrando em contato com o Proprietário.\nO Proprietário poderá ter a permissão de conservar os Dados Pessoais por um prazo maior sempre que o Usuário tiver dado a sua autorização para tal processamento, enquanto tal autorização não tiver sido retirada. Além disso, o Proprietário poderá ficar obrigado a conservar os Dados Pessoais por um prazo maior sempre que necessário para o cumprimento de uma obrigação jurídica ou de um mandado de uma autoridade.\n\nAssim que o prazo de conservação vencer os Dados Pessoais serão apagados. Desta forma o direito de acessar, o direito de apagar, o direito de corrigir e o direito à portabilidade dos dados não poderão ter o seu cumprimento exigido após o vencimento do prazo de conservação.\n\nOs direitos dos Usuários com base no Regulamento Geral de Proteção de Dados (GDPR)\nOs Usuários poderão exercer determinados direitos a respeito dos seus Dados processados pelo Proprietário.\n\nEm especial, os Usuários possuem os direitos a fazer o seguinte, dentro dos limites permitidos por lei:\n\nRetirar a sua anuência a qualquer momento. Os Usuários possuem o direito de retirar a sua anuência nos casos em que tenham dado a sua anuência anteriormente para o processamento dos seus Dados Pessoais.\nObjetar o processamento dos seus Dados. Os Usuários possuem o direito de objetar o processamento dos seus Dados se o processamento for executado sobre outra base jurídica que não a anuência.\nAcessar os seus Dados. Os Usuários possuem o direito de saber se os seus Dados estão sendo tratados pelo Proprietário, obter revelações sobre determinados aspectos do tratamento e conseguir uma cópia dos Dados que estiverem sendo tratados.\nVerificar e pedir retificação. Os Usuários possuem o direito de verificar a exatidão dos seus Dados e de pedir que os mesmos sejam atualizados ou corrigidos.\nRestringir o processamento dos seus Dados. Os Usuários possuem o direito de restringir o processamento dos seus Dados para qualquer outra finalidade que não seja o armazenamento dos mesmos.\nTer os seus Dados Pessoais apagados ou retirados de outra maneira. Os Usuários possuem o direito de obter a eliminação dos seus Dados do Proprietário.\nReceber os seus Dados e ter os mesmos transferidos para outro controlador. Os Usuários possuem o direito de receber os seus Dados em um formato estruturado, utilizado comumente e apto a ser lido por máquinas e, se for viável tecnicamente, fazer com que estes sejam transmitidos para outro controlador sem nenhum empecilho.\nRegistrar uma reclamação. Os Usuários possuem o direito de apresentar reclamação perante a sua autoridade de proteção de dados competente.\nOs Usuários também possuem o direito de serem informados sobre a base jurídica das transferências de Dados para o exterior, incluindo quaisquer organizações internacionais regidas pelo direito internacional público ou formadas por dois ou mais países, como a ONU, e sobre as medidas de segurança tomadas pelo Proprietário para proteger seus Dados.\n\nDetalhes sobre o direito de objetar ao processamento\nNos casos em que os Dados Pessoais forem processados por um interesse público, no exercício de uma autorização oficial na qual o Proprietário estiver investido ou para finalidades dos interesses legítimos perseguidos pelo Proprietário, os Usuários poderão objetar tal processamento através do fornecimento de um motivo relacionado com a sua situação em especial para justificar a objeção.\n\nOs Usuários devem saber, entretanto, que caso os seus Dados Pessoais sejam processados para finalidades de marketing direto, eles podem objetar tal processamento a qualquer momento de forma gratuita e sem fornecer qualquer justificativa. Quando o Usuário se opuser ao processamento para fins de marketing direto, os Dados Pessoais não serão mais processados para esses fins. Para saber se o Proprietário está processando Dados Pessoais para fins de marketing direto, os Usuários podem consultar as seções respectivas deste documento.\n\nComo exercer estes direitos\nQuaisquer pedidos para exercer os direitos dos Usuários podem ser direcionados ao Proprietário através dos dados de contato fornecidos neste documento. Tais pedidos são gratuitos e serão atendidos pelo Proprietário com a maior brevidade possível e sempre no prazo de um mês, fornecendo aos Usuários as informações exigidas por lei. Qualquer retificação ou exclusão de Dados Pessoais ou restrição de processamento será comunicada pelo Proprietário a cada destinatário, se houver, a quem os Dados Pessoais foram divulgados, a menos que isso seja impossível ou implique um trabalho desproporcional. A pedido dos Usuários, o Proprietário os informará sobre tais destinatários.\u003Cbr\u003E\u003C\u002Fdiv\u003E","style":{"fontSize":14,"color":"#212529"}},"_owner":null}]},"_owner":null}]},"_owner":null}]},"_owner":null}],"pageSettings":{"language":"pt-BR","badgeAllowed":false,"position":"bottomLeft","launchContent":0,"fonts":[]}},"notification":[],"tenant":{"pageId":"L1rfuFG7606A8DApd5gGUA","tenantId":"ttvfmPOw8USxQL329u1Vng","funnelId":"9b2926f0-cf8f-4b70-a83a-bb8b6ee4bcfb","stepId":"3CEE71eh3ke3nf1rUfisXA","type":"Custom","isSSR":true},"settings":{"url":"growthchat.online\u002Fpoliticas","version":"0","originStepUrl":"","originStepId":null,"isConversion":false,"accountIsDisabled":false},"router":{"location":{"pathname":"\u002F","search":"","hash":"","key":"2cfvbh"},"action":"POP"}}</script><script type="text/javascript" async="">
+                var blob = new Blob([
+                    document.querySelector('#result').textContent
+                ], { type: "text/javascript" });
+
+                var worker = new Worker(window.URL.createObjectURL(blob));
+
+                worker.onmessage = function (e) {
+                    if (e.data.type === 'getFont') {
+                        getFont(e.data.link);
+                    }
+                    if (e.data.type === 'getMain') {
+                        getMain([
+                            '/dist/vendor_e06534953fb807bdf519.js',
+                            '/dist/main-client_38cb86f01d170454d230.js'
+                        ]);
+                    }
+                };
+
+                worker.postMessage({ url: document.location.protocol + '//' + document.location.host });
+            </script><script type="text/javascript" async="">
+                var devicePixelRatio = window.devicePixelRatio;
+                var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                var deviceType;
+                if(deviceWidth >= 992) deviceType = 'style';
+                if(deviceWidth < 992 && deviceWidth >= 820) deviceType = 'tablet';
+                if(deviceWidth < 820) deviceType = 'mobile';
+
+                var imgs = document.getElementsByTagName("img");
+                
+                for (var i = 0; i < imgs.length; i++) {
+                    var img = imgs[i];
+                    var src = img.dataset.src;
+
+                    if(!src){
+                        continue;
+                    }
+
+                    var widthMap = JSON.parse(img.dataset.widthmap);
+
+                    if(img.dataset.isgif) {
+                        img.src = src;
+                        continue;
+                    } else {
+                        src = src + '?auto=compress&width=';
+                    }
+
+                    if(widthMap[deviceType]) {
+                        var finalWidth;
+                        var logicalSize = widthMap[deviceType] * devicePixelRatio;
+                        if (widthMap.natural && logicalSize > widthMap.natural) {
+                            finalWidth = widthMap.natural;
+                        } else {
+                            finalWidth = logicalSize;
+                        }
+                        img.src = src + finalWidth;
+                        continue;
+                    }
+
+                    if(widthMap.style) {
+                        var finalWidth;
+                        var logicalSize = widthMap.style * devicePixelRatio;
+                        if (widthMap.natural && logicalSize > widthMap.natural) {
+                            finalWidth = widthMap.natural;
+                        } else {
+                            finalWidth = logicalSize;
+                        }
+                        img.src = src + finalWidth;
+                        continue;
+                    }
+                    img.src = src;
+                }
+            </script></body></html>
